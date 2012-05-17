@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Rails.logger.info "Creating Categories"
+Category.create(:name => "Photographers")
+Category.create(:name => "Musicians")
+Category.create(:name => "Designers")
+Category.create(:name => "Painters")
+Category.create(:name => "Writers")
+Category.create(:name => "Others")
+Rails.logger.info "Finished creating Categories"
+

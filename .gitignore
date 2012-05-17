@@ -13,3 +13,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore all unneeded files
+doc/
+*.swp
+/idea
+.project
+.DS_Store
+/bundler_stubs
+.rspec
