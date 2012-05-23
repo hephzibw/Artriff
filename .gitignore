@@ -18,7 +18,7 @@
 # Ignore all unneeded files
 doc/
 *.swp
-/idea
+/.idea
 .project
 .DS_Store
 /bundler_stubs
