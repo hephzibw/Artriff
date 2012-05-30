@@ -1,11 +1,11 @@
 <section>
-    <p>CATEGORIES</p>
+    <p class="aligned">CATEGORIES</p>
   <!--<img src="https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-snc7/294918_296538183769324_296535847102891_640403_1750675682_n.jpg" alt="ooga"></img>-->
   <% @categories.each do |category| %>
       <article class='list_types'>
-      <img src="assets/rails.png" alt="" class="logo">
+      <img src="../../assets/rails.png" alt="" class="logo">
 
-        <h1><%= link_to(category.name, category) %></h1>
+        <h1><%= link_to(category.name, "categories/#{category.id}/sub_categories") %></h1>
       </article>
 <% end %>
 </section>

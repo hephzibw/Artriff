@@ -1,7 +1,5 @@
 require "spec_helper"
 
-describe Category do
+describe SubCategory do
   it {should validate_presence_of(:name)}
-  it {should have_many(:sub_categories)}
-
 end
