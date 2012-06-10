@@ -5,6 +5,14 @@ Artriff::Application.routes.draw do
     resource :sub_categories
   end
 
+  resources :sub_categories do
+    resource :artists
+  end
+
+  resources :artists do
+    resource :images
+  end
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

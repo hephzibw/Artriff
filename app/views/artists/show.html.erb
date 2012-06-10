@@ -1,11 +1,11 @@
 <section>
-  <p class="aligned">SUB-CATEGORIES</p>
+  <p class="aligned">ARTISTS</p>
   <!--<img src="https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-snc7/294918_296538183769324_296535847102891_640403_1750675682_n.jpg" alt="ooga"></img>-->
-  <% @sub_categories.each do |sub_category| %>
+  <% @artists.each do |artist| %>
       <article class='list_types'>
         <img src="../../assets/rails.png" alt="" class="logo">
 
-        <h1><%= link_to(sub_category.name, "/sub_categories/#{sub_category.id}/artists") %></h1>
+        <h1><%= link_to(artist.name, "/artists/#{artist.id}/images") %></h1>
       </article>
   <% end %>
 </section>

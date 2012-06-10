@@ -1,0 +1,10 @@
+<section>
+  <p class="aligned">IMAGES</p>
+  <!--<img src="https://fbcdn-sphotos-a.akamaihd.net/hphotos-ak-snc7/294918_296538183769324_296535847102891_640403_1750675682_n.jpg" alt="ooga"></img>-->
+  <% @images.each do |image| %>
+      <article class='list_types'>
+        <img src=<%= image.url %></img>
+        <p><%= image.title %></p>
+      </article>
+  <% end %>
+</section>
